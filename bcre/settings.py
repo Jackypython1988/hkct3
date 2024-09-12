@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
 ]   
 
 MIDDLEWARE = [
@@ -147,3 +148,9 @@ MESSAGE_TAGS ={
     messages.INFO : 'info',
     messages.WARNING : 'warning',
 }
+
+EMAIL_HOST = 'smtp.mail.com',
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'chungyincheung@gmail.com'
+EMAIL_HOST_PASSWORD = 'Z9884212b!'
+EMAIL_USE_TLS = True
